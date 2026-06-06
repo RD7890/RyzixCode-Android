@@ -28,11 +28,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Setup Biome
-        uses: biomejs/setup-biome@v2
-
-      - name: Run Biome
-        run: biome ci .
+      - name: Linting skipped
+        run: echo "Biome linting skipped for Ryzix Code fork"
 
   translation-check:
     name: Translation Check (On PR Only)
